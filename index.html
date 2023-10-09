@@ -119,18 +119,15 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">erDiagram</span><br><span class="line">    FAMILY ||--|&#123; PERSON : has-many</span><br><span class="line">    FAMILY ||--|&#123; TASK : has-many</span><br><span class="line">    PERSON &#125;o--o&#123; TASK-OWNERS : zero-to-many</span><br><span class="line">    TASK &#125;o--o&#123; TASK-OWNERS : zero-to-many</span><br></pre></td></tr></table></figure>
 
 <p>A family is a collection of people. A family can have multiple tasks, and these tasks can have owners within the<br>family. Tasks will be able to be marked as complete, and near the end we’ll add some more advanced functionality like reoccurring<br>tasks. Users will be able to authenticate, and we’ll implement authorization to ensure that individuals outside the family won’t have access to tasks they shouldn’t see.</p>
-<h1 id="Expected-Roadmap"><a href="#Expected-Roadmap" class="headerlink" title="Expected Roadmap"></a>Expected Roadmap</h1><p>This is subject to change but here is roughly how I expect this to be broken down</p>
-<ol start="0">
-<li>Intro - This Post</li>
-<li>Bootstrap app and CRUD operations for Tasks</li>
-<li>Add in prisma and postgres</li>
-<li>Dataloaders and their role in GraphQL</li>
-<li>Create user and add authn</li>
-<li>Family Management</li>
-<li>Add AuthZ</li>
-<li>Family and personal tasks</li>
-<li>Task after complete actions (reocuring and create new tasks)</li>
-<li>Wrap it up</li>
+<h1 id="Topics-This-Will-Cover"><a href="#Topics-This-Will-Cover" class="headerlink" title="Topics This Will Cover"></a>Topics This Will Cover</h1><ol>
+<li>Learn NestJS from the ground up</li>
+<li>Bootstrapping a GraphQL API in NestJS</li>
+<li>Organizing a NestJS project</li>
+<li>Adding prisma with Postgres to a NestJS project</li>
+<li>CRUD operations through GraphQL</li>
+<li>Authentication with JWT and Cookies</li>
+<li>GraphQL API design</li>
+<li>…More stuff, I’ll update this list as I write out the articles</li>
 </ol>
 
       
