@@ -22,8 +22,8 @@ fingerprintAlgorithm = "sha256"
   showScrollToTop = true
 
 [homepage]
-  layout = "page"
-  showRecent = true
+  layout = "minimal"
+  showRecent = false
   recentLimit = 5
 
 [article]

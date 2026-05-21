@@ -1,0 +1,19 @@
+<section class="minimal-home">
+  <div class="minimal-home__inner">
+    <h1 class="minimal-home__title">
+      {{ site.Title | emojify }}
+    </h1>
+    <nav class="minimal-home__links" aria-label="Primary links">
+      {{ range site.Menus.main }}
+        <a
+          class="minimal-home__link"
+          href="{{ .URL }}"
+          {{ with .Params.rel }}rel="{{ . }}"{{ end }}
+          {{ with .Params.target }}target="{{ . }}"{{ end }}
+        >
+          {{ .Name | markdownify | emojify }}
+        </a>
+      {{ end }}
+    </nav>
+  </div>
+</section>
