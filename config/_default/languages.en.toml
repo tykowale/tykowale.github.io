@@ -1,0 +1,11 @@
+locale = "en"
+label = "English"
+direction = "ltr"
+weight = 1
+
+title = "Ty Kowalewski"
+
+[params]
+  dateFormat = "January 2, 2006"
+  description = "Software engineer, dad, AI, process and strategy. Thoughts are my own."
+  mainSections = ["posts"]
