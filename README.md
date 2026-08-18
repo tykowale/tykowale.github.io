@@ -11,7 +11,7 @@ This is Ty Kowalewski's personal site, built with [Hugo](https://gohugo.io/) usi
 - `layouts/` contains small local theme overrides, if needed.
 - `static/` contains files copied directly into the published site.
 - `static/CNAME` preserves the custom GitHub Pages domain.
-- `.github/workflows/hugo.yaml` builds and deploys the site on every push to `master`.
+- `.github/workflows/hugo.yaml` builds and deploys the site on every push to `main`.
 
 ## Local Setup
 
@@ -55,12 +55,12 @@ Set `draft: false` when the post is ready to publish.
 
 ## Publishing
 
-Commit and push changes to `master`:
+Commit and push changes to `main`:
 
 ```sh
 git add .
 git commit -m "Update site"
-git push origin master
+git push origin main
 ```
 
 GitHub Actions will build the Hugo site and deploy the generated `public/` output to GitHub Pages.
